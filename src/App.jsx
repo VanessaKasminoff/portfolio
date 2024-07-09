@@ -1,4 +1,5 @@
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
+
 
 function App() {
 
@@ -6,7 +7,7 @@ function App() {
     <div className="app">
     <Navbar/>
     <div className="hero-section">
-      <h1>Hello, welcome!</h1>
+      <h1>Hello, world!</h1>
     </div>
     </div>
   )

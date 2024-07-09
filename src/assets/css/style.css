@@ -13,6 +13,11 @@ body {
 .app {
   margin: 15px;
 }
+.app .hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .app .hero-section h1 {
   color: #fff;
 }

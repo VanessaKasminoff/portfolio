@@ -5,6 +5,10 @@
   margin: 15px;
 
   .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     h1 {
       color: $primary-color;
     }
