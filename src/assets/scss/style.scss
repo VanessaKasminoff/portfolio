@@ -1,0 +1,35 @@
+@import "partials/base";
+@import "partials/config";
+
+.app {
+  margin: 15px;
+
+  .hero-section {
+    
+
+    h1 {
+      color: $secondary-color;
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    .enter-key-logo {
+      fill: $secondary-color;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+
+      li {
+        a {
+          color: $secondary-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

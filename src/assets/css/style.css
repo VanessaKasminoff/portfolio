@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2D1E2F;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.app {
+  margin: 15px;
+}
+.app .hero-section h1 {
+  color: #fff;
+}
+.app nav {
+  display: flex;
+  justify-content: space-between;
+}
+.app nav .enter-key-logo {
+  fill: #fff;
+}
+.app nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.app nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
