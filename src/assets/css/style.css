@@ -19,18 +19,28 @@ body {
 .app nav {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .app nav .enter-key-logo {
   fill: #fff;
+}
+.app nav .enter-key-logo:hover {
+  fill: #FFD5FF;
 }
 .app nav ul {
   display: flex;
   list-style: none;
   gap: 30px;
 }
+.app nav ul li {
+  font-size: 1.2rem;
+}
 .app nav ul li a {
   color: #fff;
   text-decoration: none;
+}
+.app nav ul li a:hover {
+  color: #FFD5FF;
 }
 
 /*# sourceMappingURL=style.css.map */
