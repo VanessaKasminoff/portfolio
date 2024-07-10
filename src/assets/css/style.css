@@ -44,6 +44,9 @@ body {
   color: #fff;
   text-decoration: none;
 }
+.app nav ul li a:active {
+  color: yellow;
+}
 .app nav ul li a:hover {
   color: #FFD5FF;
 }
