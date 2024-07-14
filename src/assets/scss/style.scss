@@ -3,16 +3,8 @@
 
 .app {
   margin: 15px;
+  height: 100vh;
 
-  .hero-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    h1 {
-      color: $primary-color;
-    }
-  }
   nav {
     display: flex;
     justify-content: space-between;
@@ -20,6 +12,9 @@
 
     .enter-key-logo {
       fill: $primary-color;
+      height: 36px;
+      width: 36px;
+      transition: all ease 0.5s;
 
       &:hover {
         fill: $secondary-color;
@@ -32,13 +27,11 @@
       gap: 30px;
 
       li {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         a {
           color: $primary-color;
           text-decoration: none;
-          &:active {
-            color: yellow;
-          }
+          transition: all ease 0.5s;
           &:hover {
             color: $secondary-color;
           }
@@ -46,4 +39,92 @@
       }
     }
   }
+
+  // button {
+  //   background-color: #41521f;
+  //   color: #d7c9aa;
+  //   border: none;
+  //   width: 100px;
+  //   height: 50px;
+  //   border-radius: 50px;
+  // }
+
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85%;
+
+    div {
+      h1 {
+        color: $primary-color;
+        font-size: 50px;
+      }
+
+      p {
+        color: $primary-color;
+      }
+    }
+
+    .hero-photo-div {
+      height: 40%;
+
+      .my-photo {
+        height: 100%;
+        border-radius: 60%;
+      }
+    }
+  }
+
+  .footer {
+    border-top: 1px solid $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .social-icons {
+      margin-top: 20px;
+      a {
+        svg {
+          height: 36px;
+          width: 36px;
+          fill: $primary-color;
+          transition: all ease 0.5s;
+        }
+
+        &:hover {
+          svg {
+            fill: $secondary-color;
+          }
+        }
+      }
+    }
+
+    p {
+      color: $primary-color;
+      margin-top: 10px;
+
+      span {
+        svg {
+          fill: $primary-color;
+          transition: all ease 0.5s;
+        }
+        &:hover {
+          svg {
+            fill: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+
+  // .empty-div {
+  //   background-color: #c9b79c;
+  //   width: 100%;
+  //   height: 500px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
 }

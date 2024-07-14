@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,18 +10,12 @@ body {
   background-color: #2D1E2F;
   max-width: 1400px;
   margin: auto;
+  font-family: "Nunito", sans-serif;
 }
 
 .app {
   margin: 15px;
-}
-.app .hero-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.app .hero-section h1 {
-  color: #fff;
+  height: 100vh;
 }
 .app nav {
   display: flex;
@@ -27,10 +23,13 @@ body {
   align-items: flex-end;
 }
 .app nav .enter-key-logo {
-  fill: #fff;
+  fill: #D7C9AA;
+  height: 36px;
+  width: 36px;
+  transition: all ease 0.5s;
 }
 .app nav .enter-key-logo:hover {
-  fill: #FFD5FF;
+  fill: #9F86C0;
 }
 .app nav ul {
   display: flex;
@@ -38,17 +37,64 @@ body {
   gap: 30px;
 }
 .app nav ul li {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .app nav ul li a {
-  color: #fff;
+  color: #D7C9AA;
   text-decoration: none;
-}
-.app nav ul li a:active {
-  color: yellow;
+  transition: all ease 0.5s;
 }
 .app nav ul li a:hover {
-  color: #FFD5FF;
+  color: #9F86C0;
+}
+.app .hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 85%;
+}
+.app .hero-section div h1 {
+  color: #D7C9AA;
+  font-size: 50px;
+}
+.app .hero-section div p {
+  color: #D7C9AA;
+}
+.app .hero-section .hero-photo-div {
+  height: 40%;
+}
+.app .hero-section .hero-photo-div .my-photo {
+  height: 100%;
+  border-radius: 60%;
+}
+.app .footer {
+  border-top: 1px solid #D7C9AA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app .footer .social-icons {
+  margin-top: 20px;
+}
+.app .footer .social-icons a svg {
+  height: 36px;
+  width: 36px;
+  fill: #D7C9AA;
+  transition: all ease 0.5s;
+}
+.app .footer .social-icons a:hover svg {
+  fill: #9F86C0;
+}
+.app .footer p {
+  color: #D7C9AA;
+  margin-top: 10px;
+}
+.app .footer p span svg {
+  fill: #D7C9AA;
+  transition: all ease 0.5s;
+}
+.app .footer p span:hover svg {
+  fill: #9F86C0;
 }
 
 /*# sourceMappingURL=style.css.map */
