@@ -58,11 +58,27 @@
     div {
       h1 {
         color: $primary-color;
-        font-size: 50px;
+        font-size: 3.2rem;
+        margin-bottom: 10%;
       }
 
       p {
         color: $primary-color;
+        font-size: 1.5rem;
+
+        span {
+          margin-left: 5px;
+          
+          svg {
+            fill: $primary-color;
+            transition: all ease 0.5s;
+          }
+          &:hover {
+            svg {
+              fill: $secondary-color;
+            }
+          }
+        }
       }
     }
 
@@ -103,18 +119,6 @@
     p {
       color: $primary-color;
       margin-top: 10px;
-
-      span {
-        svg {
-          fill: $primary-color;
-          transition: all ease 0.5s;
-        }
-        &:hover {
-          svg {
-            fill: $secondary-color;
-          }
-        }
-      }
     }
   }
 

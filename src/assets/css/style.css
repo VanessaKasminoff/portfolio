@@ -11,6 +11,7 @@ body {
   max-width: 1400px;
   margin: auto;
   font-family: "Nunito", sans-serif;
+  overflow: hidden;
 }
 
 .app {
@@ -55,10 +56,22 @@ body {
 }
 .app .hero-section div h1 {
   color: #D7C9AA;
-  font-size: 50px;
+  font-size: 3.2rem;
+  margin-bottom: 10%;
 }
 .app .hero-section div p {
   color: #D7C9AA;
+  font-size: 1.5rem;
+}
+.app .hero-section div p span {
+  margin-left: 5px;
+}
+.app .hero-section div p span svg {
+  fill: #D7C9AA;
+  transition: all ease 0.5s;
+}
+.app .hero-section div p span:hover svg {
+  fill: #9F86C0;
 }
 .app .hero-section .hero-photo-div {
   height: 40%;
@@ -88,13 +101,6 @@ body {
 .app .footer p {
   color: #D7C9AA;
   margin-top: 10px;
-}
-.app .footer p span svg {
-  fill: #D7C9AA;
-  transition: all ease 0.5s;
-}
-.app .footer p span:hover svg {
-  fill: #9F86C0;
 }
 
 /*# sourceMappingURL=style.css.map */
