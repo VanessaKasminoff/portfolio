@@ -1,78 +1,116 @@
 @import "partials/base";
 @import "partials/config";
 
-.app {
-  margin: 15px;
-  height: 100vh;
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    .enter-key-logo {
-      fill: $primary-color;
-      height: 36px;
-      width: 36px;
-      transition: all ease 0.5s;
-
-      &:hover {
-        fill: $secondary-color;
-      }
-    }
-
-    ul {
+  .app {
+    margin: 15px;
+    height: 100vh;
+  
+    nav {
       display: flex;
-      list-style: none;
-      gap: 30px;
-
-      li {
-        font-size: 1.4rem;
-        a {
-          color: $primary-color;
-          text-decoration: none;
-          transition: all ease 0.5s;
-          &:hover {
-            color: $secondary-color;
+      justify-content: space-between;
+      align-items: flex-end;
+      position: sticky;
+      top: 0;
+  
+      .enter-key-logo {
+        fill: $primary-color;
+        height: 36px;
+        width: 36px;
+        transition: all ease 0.5s;
+  
+        &:hover {
+          fill: $secondary-color;
+        }
+      }
+  
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+  
+        li {
+          font-size: 1.4rem;
+          a {
+            color: $primary-color;
+            text-decoration: none;
+            transition: all ease 0.5s;
+            &:hover {
+              color: $secondary-color;
+            }
           }
         }
       }
     }
-  }
-
-  // button {
-  //   background-color: #41521f;
-  //   color: #d7c9aa;
-  //   border: none;
-  //   width: 100px;
-  //   height: 50px;
-  //   border-radius: 50px;
-  // }
-
-  .hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 85%;
-
-    div {
-      h1 {
-        color: $primary-color;
-        font-size: 3.2rem;
-        margin-bottom: 10%;
+  
+    // button {
+    //   background-color: #41521f;
+    //   color: #d7c9aa;
+    //   border: none;
+    //   width: 100px;
+    //   height: 50px;
+    //   border-radius: 50px;
+    // }
+  
+    .hero-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15%;
+      height: 85%;
+  
+      div {
+        h1 {
+          color: $primary-color;
+          font-size: 3.2rem;
+          margin-bottom: 10%;
+        }
+  
+        p {
+          color: $primary-color;
+          font-size: 1.5rem;
+  
+          span {
+            margin-left: 5px;
+            
+            svg {
+              fill: $primary-color;
+              transition: all ease 0.5s;
+            }
+            &:hover {
+              svg {
+                fill: $secondary-color;
+              }
+            }
+          }
+        }
       }
-
-      p {
-        color: $primary-color;
-        font-size: 1.5rem;
-
-        span {
-          margin-left: 5px;
-          
+  
+      .hero-photo-div {
+        height: 45%;
+  
+        .my-photo {
+          height: 100%;
+          border-radius: 60%;
+        }
+      }
+    }
+  
+    .footer {
+      border-top: 1px solid $primary-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .social-icons {
+        margin-top: 20px;
+        a {
           svg {
+            height: 36px;
+            width: 36px;
             fill: $primary-color;
             transition: all ease 0.5s;
           }
+  
           &:hover {
             svg {
               fill: $secondary-color;
@@ -80,55 +118,20 @@
           }
         }
       }
-    }
-
-    .hero-photo-div {
-      height: 40%;
-
-      .my-photo {
-        height: 100%;
-        border-radius: 60%;
+  
+      p {
+        color: $primary-color;
+        margin-top: 10px;
       }
     }
+  
+    // .empty-div {
+    //   background-color: #c9b79c;
+    //   width: 100%;
+    //   height: 500px;
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   align-items: center;
+    // }
   }
-
-  .footer {
-    border-top: 1px solid $primary-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .social-icons {
-      margin-top: 20px;
-      a {
-        svg {
-          height: 36px;
-          width: 36px;
-          fill: $primary-color;
-          transition: all ease 0.5s;
-        }
-
-        &:hover {
-          svg {
-            fill: $secondary-color;
-          }
-        }
-      }
-    }
-
-    p {
-      color: $primary-color;
-      margin-top: 10px;
-    }
-  }
-
-  // .empty-div {
-  //   background-color: #c9b79c;
-  //   width: 100%;
-  //   height: 500px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
-}

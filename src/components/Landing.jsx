@@ -8,7 +8,9 @@ const Landing = () => {
       <Navbar />
       <div className="hero-section">
         <div>
-          <h1>Hi! Thanks for stopping by :)</h1>
+          <div className="type-container">
+          <h1 className="type-animation">Hi! Thanks for stopping by :)</h1>
+          </div>
           <p>I'm Vanessa</p>
           <p>
             A software developer, gamer, and tea enthusiast
